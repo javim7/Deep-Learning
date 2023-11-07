@@ -21,7 +21,7 @@ Este laboratorio se centró en la construcción de sistemas de recomendación pa
 
 ## Autores
 - Javier Mombiela ([GitHub](https://github.com/javim7))
-- Roberto Ríos ([GitHub](https://github.com/robertoriosm))
+- Roberto Ríos ([GitHub](https://github.com/robertriosm))
 
 # Laboratorios
 
@@ -45,7 +45,7 @@ La exploración de estos conceptos sienta las bases para el estudio posterior de
 
 ## Laboratorio 2: Implementación de Redes Neuronales para Predicción de Índice de Aprobación de Películas
 
-Para el segundo laboratorio se nos dio la libertad de definir una implementación de redes neuronales para predecir el índice de aprobación (approval_index) de películas. Elegimos un enfoque de regresión y seleccionamos un subconjunto de variables del conjunto de datos 'movie_statistic_dataset.csv' que mostraron una correlación significativa con el approval_index, a saber, 'movie_averageRating' y 'movie_numberOfVotes'.
+Para el segundo laboratorio se nos dio la libertad de definir una implementación de redes neuronales para predecir el índice de aprobación (approval_index) de películas. Elegimos un enfoque de regresión y seleccionamos un subconjunto de variables del conjunto de datos `movie_statistic_dataset.csv` que mostraron una correlación significativa con el approval_index, a saber, `movie_averageRating` y `movie_numberOfVotes`.
 
 El propósito de este laboratorio fue explorar diferentes arquitecturas de redes neuronales y técnicas de regularización para evaluar su rendimiento en la predicción del índice de aprobación de películas.
 
@@ -95,7 +95,7 @@ Este laboratorio nos proporcionó una valiosa experiencia en la construcción y 
 
 ## Laboratorio 3: Implementación de Redes Neuronales en Series Temporales
 
-En nuestro tercer laboratorio, nos enfrentamos al desafío de implementar redes neuronales para resolver un problema de regresión en una serie temporal, específicamente utilizando el conjunto de datos Monthly Sunspots, 'sunspots.csv'. Nuestra tarea era implementar tres arquitecturas de redes neuronales diferentes: Feed Forward NN (Red Simple), Recurrent Neural Network (RNN) y Long Short-Term Memory (LSTM).
+Para el tercer laboratorio, nos enfrentamos al desafío de implementar redes neuronales para resolver un problema de regresión en una serie temporal, específicamente utilizando el conjunto de datos Monthly Sunspots, `sunspots.csv`. Nuestra tarea era implementar tres arquitecturas de redes neuronales diferentes: Feed Forward NN (Red Simple), Recurrent Neural Network (RNN) y Long Short-Term Memory (LSTM).
 
 ### Arquitecturas de Redes Neuronales
 
@@ -137,9 +137,9 @@ Tras implementar estas tres arquitecturas, evaluamos su rendimiento en el conjun
 
 Basándonos en los resultados, el modelo LSTM obtuvo el RMSE más bajo en el conjunto de prueba en la mayoría de las iteraciones, seguido por el modelo RNN. El modelo FFNN siempre tuvo el peor rendimiento. Por lo tanto, concluimos que la mejor opción para resolver este problema de regresión en una serie temporal es la arquitectura **Long Short-Term Memory (LSTM)**.
 
-Dado que el conjunto de datos 'sunspots.csv' implica la necesidad de capturar tanto conexiones temporales a corto como a largo plazo, la elección de la red neuronal LSTM se justifica. Las LSTM tienen la capacidad de modelar patrones en datos de series temporales con una gran riqueza y pueden capturar tanto relaciones temporales de corta como de larga duración. Además, ofrecen una ventaja clave en la predicción de series temporales en comparación con las otras arquitecturas evaluadas. Su capacidad para conservar información a lo largo de períodos prolongados las hace ideales para resolver este tipo de problema.
+Dado que el conjunto de datos `sunspots.csv` implica la necesidad de capturar tanto conexiones temporales a corto como a largo plazo, la elección de la red neuronal LSTM se justifica. Las LSTM tienen la capacidad de modelar patrones en datos de series temporales con una gran riqueza y pueden capturar tanto relaciones temporales de corta como de larga duración. Además, ofrecen una ventaja clave en la predicción de series temporales en comparación con las otras arquitecturas evaluadas. Su capacidad para conservar información a lo largo de períodos prolongados las hace ideales para resolver este tipo de problema.
 
-El Laboratorio 3 nos permitio explorar y entender las ventajas y limitaciones de diferentes arquitecturas de redes neuronales en el contexto de series temporales, y llegamos conclusión de que, en este caso, la red LSTM es la elección óptima para obtener predicciones precisas en el conjunto de datos 'sunspots.csv'.
+El Laboratorio 3 nos permitio explorar y entender las ventajas y limitaciones de diferentes arquitecturas de redes neuronales en el contexto de series temporales, y llegamos conclusión de que, en este caso, la red LSTM es la elección óptima para obtener predicciones precisas en el conjunto de datos `sunspots.csv`.
 
 ## Laboratorio 5: Generación de Imágenes MNIST con GAN
 
@@ -153,9 +153,9 @@ El generador toma un vector de ruido aleatorio de 100 dimensiones como entrada y
 - Capa Densa (Fully Connected): Una capa densa con 256 neuronas y activación LeakyReLU (para permitir un pequeño gradiente negativo).
 - Capa Densa: Otra capa densa con 512 neuronas y activación LeakyReLU.
 - Capa Densa: Una capa densa con 1024 neuronas y activación LeakyReLU.
-- Capa de Salida: La capa de salida es una capa densa con 784 neuronas (28x28 píxeles) y utiliza la activación 'tanh' para escalar los valores generados al rango entre -1 y 1, que es válido para imágenes en escala de grises.
+- Capa de Salida: La capa de salida es una capa densa con 784 neuronas (28x28 píxeles) y utiliza la activación `tanh` para escalar los valores generados al rango entre -1 y 1, que es válido para imágenes en escala de grises.
 
-El generador crea imágenes a partir del ruido aleatorio proporcionado como entrada, y la activación 'tanh' asegura que los píxeles generados estén en el rango correcto.
+El generador crea imágenes a partir del ruido aleatorio proporcionado como entrada, y la activación `tanh` asegura que los píxeles generados estén en el rango correcto.
 
 ### Estructura de D(x) (Discriminador)
 
@@ -192,7 +192,7 @@ El laboratorio 5 nos demostró cómo una GAN puede generar datos realistas a par
 En este laboratorio, se construyeron dos sistemas de recomendación para libros utilizando un dataset que consta de información sobre libros, usuarios y calificaciones de libros. Se realizaron dos tipos de sistemas de recomendación: basados en contenido y basados en filtros colaborativos.
 
 ### Análisis Exploratorio de Datos (EDA) del Dataset
-Antes de profundizar en los modelos, se realizó un análisis exploratorio de datos para comprender la información disponible en los conjuntos de datos. Se identificaron características relevantes y se realizaron transformaciones, como la codificación de etiquetas para las columnas 'Publisher', 'Book-Title' y 'Book-Author'. Los conjuntos de datos se dividieron en conjuntos de entrenamiento y prueba, con diferentes divisiones en función de cada modelo.
+Antes de profundizar en los modelos, se realizó un análisis exploratorio de datos para comprender la información disponible en los conjuntos de datos. Se identificaron características relevantes y se realizaron transformaciones, como la codificación de etiquetas para las columnas `Publisher`, `Book-Title` y `Book-Author`. Los conjuntos de datos se dividieron en conjuntos de entrenamiento y prueba, con diferentes divisiones en función de cada modelo.
 
 ### Estructura de las Redes y Funcionamiento
 **Modelo Basado en Contenido**
